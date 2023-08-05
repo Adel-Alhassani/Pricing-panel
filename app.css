@@ -1,0 +1,262 @@
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------------------------------------------- */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #60a9ff;
+    /* min-width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.panel {
+    background-color: white;
+    border-radius: 1.8em;
+    padding: 15px 25px;
+    max-width: 100%;
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: gray;
+    font-weight: 525;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+li {
+    color: #0077ff;
+    font-weight: 525;
+    letter-spacing: 2px;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 15px 0;
+    ;
+    border-top: 1px solid rgb(192, 192, 192);
+}
+
+li:last-child {
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+span {
+    color: #0077ff;
+    margin: 20px 0 20px 0;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.pricing-button {
+    color: #60a9ff;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    padding: 15px 30px;
+    background: none;
+    border: 0.15em solid #9dd1ff;
+    border-radius: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+    background-color: #269aff;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+.pricing-img {
+    /* transform: scale(0.5); */
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+@media (min-width:1050px) {
+    .panel {
+        flex-direction: row;
+        padding: 0;
+        padding: 10px 20px;
+    }
+
+    .pricing-plan {
+        border: none;
+        border-right: 2px solid #e1f1ff;
+        padding: 20px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
